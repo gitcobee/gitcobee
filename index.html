@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배재연의 자기소개</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Jua', sans-serif; 
+            line-height: 1.4; 
+            color: #fff; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+        }
+
+        h1, h2 { font-family: 'Poor Story', cursive; }
+
+        nav { 
+            position: fixed; top: 0; width: 100%; padding: 15px; 
+            text-align: center; z-index: 1000; background: rgba(0,0,0,0.3); 
+            backdrop-filter: blur(10px); font-size: 1.2em;
+        }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+
+        section { 
+            min-height: 100vh; 
+            display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; 
+            padding: 100px 20px;
+        }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.15); 
+            padding: 35px; border-radius: 30px; 
+            backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3);
+            text-align: center; width: 56%; 
+            max-width: 600px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        h1 { font-size: 2.5em; margin-bottom: 15px; }
+        h2 { font-size: 2.2em; margin-bottom: 15px; color: #ffcc00; }
+        p { font-size: 1.1em; }
+        
+        /* 일반 프로필 이미지 스타일 */
+        img { 
+            width: 200px; height: 200px;
+            border-radius: 50%; /* 원형 유지 */
+            object-fit: cover;
+            margin: 20px 0;
+            border: 5px solid #fff;
+        }
+
+        /* [핵심] 취미 이미지만을 위한 전용 스타일 */
+        .hobby-img { 
+            width: 100%;       
+            max-width: 400px;  
+            height: auto;      
+            border-radius: 0;  /* 원형 자르기 해제 */
+            margin: 20px 0; 
+            border: none;      
+            object-fit: contain; /* 이미지가 잘리지 않고 전체 표시 */
+            background-color: transparent; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#intro">소개</a>
+        <a href="#study">학습내용</a>
+        <a href="#goal">목표</a>
+        <a href="#hobby">취미</a>
+    </nav>
+
+    <section id="intro">
+        <div class="card">
+            <h1>배재연의 자기소개</h1>
+            <img src="./images/캐릭커처.png" alt="프로필">
+            <p>AI 엔지니어를 꿈꾸는<br>열정 가득한 학생입니다.</p>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="card">
+            <h2>학습내용</h2>
+            <img src="./images/캐릭커처1.png" alt="학습">
+            <p>AI 리터러시와 HTML 구조 설계를 배웠고<br>AI 공부를 하고 있습니다.</p>
+        </div>
+    </section>
+
+    <section id="goal">
+        <div class="card">
+            <h2>목표</h2>
+            <p>"5개월 후, 파이썬을 활용한<br>AI 모델 구현 전문가가 되겠습니다!"</p>
+        </div>
+    </section>
+
+    <section id="hobby">
+        <div class="card">
+            <h2>취미</h2>
+            <img src="./images/취.png" alt="취미" class="hobby-img">
+            <p>요리의 창의성과 에어로빅의 에너지를 통해<br>매일매일 성장하고 있습니다.</p>
+        </div>
+    </section>
+
+</body>
+</html>
