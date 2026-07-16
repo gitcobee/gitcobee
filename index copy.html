@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배재연의 자기소개</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Jua', sans-serif; 
+            line-height: 1.4; 
+            color: #fff; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+        }
+
+        h1, h2 { font-family: 'Poor Story', cursive; }
+
+        nav { 
+            position: fixed; top: 0; width: 100%; padding: 15px; 
+            text-align: center; z-index: 1000; background: rgba(0,0,0,0.3); 
+            backdrop-filter: blur(10px); font-size: 1.2em;
+        }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+
+        section { 
+            min-height: 100vh; 
+            display: flex; flex-direction: column; 
+            justify-content: center; align-items: center; 
+            padding: 100px 20px;
+        }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.15); 
+            padding: 35px; border-radius: 30px; 
+            backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3);
+            text-align: center; width: 56%; 
+            max-width: 600px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        h1 { font-size: 2.5em; margin-bottom: 15px; }
+        h2 { font-size: 2.2em; margin-bottom: 15px; color: #ffcc00; }
+        p { font-size: 1.1em; }
+        
+        img { 
+            width: 200px; height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+            border: 5px solid #fff;
+        }
+
+        .hobby-img { 
+            width: 100%;       
+            max-width: 400px;  
+            height: auto;      
+            border-radius: 0;
+            margin: 20px 0; 
+            border: none;      
+            object-fit: contain;
+            background-color: transparent; 
+        }
+
+        .career-item {
+            text-align: left;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border-left: 4px solid #ffcc00;
+        }
+
+        .career-item strong {
+            color: #ffcc00;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+
+        .career-item p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .goal-container {
+            text-align: center;
+            width: 100%;
+        }
+
+        .goal-main {
+            font-size: 1.3em;
+            color: #ffcc00;
+            margin-bottom: 25px;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .goal-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .goal-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 204, 0, 0.5);
+        }
+
+        .goal-item-title {
+            color: #ffcc00;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        .goal-item-content {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#intro">소개</a>
+        <a href="#study">학습내용</a>
+        <a href="#career">경력사항</a>
+        <a href="#goal">목표</a>
+        <a href="#hobby">취미</a>
+        <a href="./rock-paper-sissors-game">[React]가위바위보게임</a>
+    </nav>
+
+    <section id="intro">
+        <div class="card">
+            <h1>배재연의 자기소개</h1>
+            <img src="./images/캐릭커처.png" alt="프로필">
+            <p>AI 엔지니어를 꿈꾸는<br>열정 가득한 학생입니다.</p>
+        </div>
+    </section>
+
+    <section id="study">
+        <div class="card">
+            <h2>학습내용</h2>
+            <img src="./images/캐릭커처1.png" alt="학습">
+            <p>AI 리터러시와 HTML 구조 설계를 배웠고<br>AI 공부를 하고 있습니다.</p>
+        </div>
+    </section>
+
+    <section id="career">
+        <div class="card">
+            <h2>경력사항</h2>
+            <div class="career-item">
+                <strong>분석 연구원</strong>
+                <p>XPS, TEM 분석 연구원으로 근무하며<br>다양한 실험 장비의 운영 및 분석을 담당했습니다.</p>
+            </div>
+            <div class="career-item">
+                <strong>장비 교육 및 유지보수</strong>
+                <p>실험 장비의 교육 및 유지보수 업무를 통해<br>기술적 전문성과 문제해결 능력을 갖추었습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="goal">
+        <div class="card">
+            <h2>목표</h2>
+            <div class="goal-container">
+                <div class="goal-main">
+                    AI 엔지니어를 통해 업무 자동화를 실현하겠습니다
+                </div>
+                <div class="goal-items">
+                    <div class="goal-item">
+                        <div class="goal-item-title">📚 단기 목표 (5개월)</div>
+                        <div class="goal-item-content">
+                            파이썬과 AI 기초를 습득하여<br>
+                            자동화 프로젝트를 구현할 수 있는<br>
+                            개발 역량 확보
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-item-title">🔧 중기 목표 (1년)</div>
+                        <div class="goal-item-content">
+                            분석 장비 오퍼레이터 업무를 자동화하여<br>
+                            데이터 수집, 처리, 분석 흐름을<br>
+                            효율화하는 솔루션 개발
+                        </div>
+                    </div>
+                    <div class="goal-item">
+                        <div class="goal-item-title">🚀 장기 목표 (3년)</div>
+                        <div class="goal-item-content">
+                            AI 엔지니어로서 과학/산업 분야의<br>
+                            반복 업무를 자동화하고,<br>
+                            새로운 가치를 창출하는 전문가 되기
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobby">
+        <div class="card">
+            <h2>취미</h2>
+            <img src="./images/취.png" alt="취미" class="hobby-img">
+            <p>요리의 창의성과 에어로빅의 에너지를 통해<br>매일매일 성장하고 있습니다.</p>
+        </div>
+    </section>
+
+</body>
+</html>
