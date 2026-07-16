@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gitcobee/rock-paper-sissors-game/static/css/main.5e15e222.css",
+    "main.js": "/gitcobee/rock-paper-sissors-game/static/js/main.d1fa77cf.js",
+    "static/js/453.c472e168.chunk.js": "/gitcobee/rock-paper-sissors-game/static/js/453.c472e168.chunk.js",
+    "index.html": "/gitcobee/rock-paper-sissors-game/index.html",
+    "main.5e15e222.css.map": "/gitcobee/rock-paper-sissors-game/static/css/main.5e15e222.css.map",
+    "main.d1fa77cf.js.map": "/gitcobee/rock-paper-sissors-game/static/js/main.d1fa77cf.js.map",
+    "453.c472e168.chunk.js.map": "/gitcobee/rock-paper-sissors-game/static/js/453.c472e168.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e15e222.css",
+    "static/js/main.d1fa77cf.js"
+  ]
+}
